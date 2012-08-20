@@ -1,0 +1,3 @@
+ALTER TABLE dbo.Users ADD
+	[Level] int NOT NULL CONSTRAINT DF_Users_Level DEFAULT 1
+GO

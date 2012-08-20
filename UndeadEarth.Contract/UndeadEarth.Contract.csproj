@@ -1,0 +1,139 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{522230D9-A309-4EEC-A08A-9E3118A7E03A}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>UndeadEarth.Contract</RootNamespace>
+    <AssemblyName>UndeadEarth.Contract</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation />
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="IAchievementProvider.cs" />
+    <Compile Include="IDistanceCalculator.cs" />
+    <Compile Include="IFacebookFriend.cs" />
+    <Compile Include="IFacebookGraphcs.cs" />
+    <Compile Include="IFacebookUser.cs" />
+    <Compile Include="IHuntDirector.cs" />
+    <Compile Include="IItem.cs" />
+    <Compile Include="IItemRetriever.cs" />
+    <Compile Include="IItemUsageDirector.cs" />
+    <Compile Include="INodeCreator.cs" />
+    <Compile Include="IRandomNumberProvider.cs" />
+    <Compile Include="ISafeHouse.cs" />
+    <Compile Include="ISafeHouseDirector.cs" />
+    <Compile Include="ISafeHouseItemSaver.cs" />
+    <Compile Include="ISafeHouseRetriever.cs" />
+    <Compile Include="IShopDirector.cs" />
+    <Compile Include="IStore.cs" />
+    <Compile Include="IStoreRetriever.cs" />
+    <Compile Include="IUserAttackPowerProvider.cs" />
+    <Compile Include="IUserCountsRetriever.cs" />
+    <Compile Include="IUserCountsSaver.cs" />
+    <Compile Include="IUserCreationService.cs" />
+    <Compile Include="IUserEnergyProvider.cs" />
+    <Compile Include="IUserItemRetriever.cs" />
+    <Compile Include="IUserItemSaver.cs" />
+    <Compile Include="IUserLevelService.cs" />
+    <Compile Include="IUserMoveDirector.cs" />
+    <Compile Include="IUserPotentialProvider.cs" />
+    <Compile Include="IUserSightRadiusProvider.cs" />
+    <Compile Include="IUserStatsRetriever.cs" />
+    <Compile Include="IZombiePack.cs" />
+    <Compile Include="IZombiePackDifficultyDirector.cs" />
+    <Compile Include="IZombiePackRetriever.cs" />
+    <Compile Include="IHotZone.cs" />
+    <Compile Include="IHotZoneRetriever.cs" />
+    <Compile Include="IUser.cs" />
+    <Compile Include="IUserZombiePackProgress.cs" />
+    <Compile Include="IUserZombiePackProgressRetriever.cs" />
+    <Compile Include="IUserZombiePackProgressUpdater.cs" />
+    <Compile Include="IUserRetriever.cs" />
+    <Compile Include="IUserSaver.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Tuple.cs" />
+    <Compile Include="UserStats.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

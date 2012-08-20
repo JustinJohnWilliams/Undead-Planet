@@ -1,0 +1,117 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="UndeadEarth" Class="TestDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=(local);Initial Catalog=UndeadEarth;Integrated Security=True" SettingsObjectName="UndeadEarth.Test.Properties.Settings" SettingsPropertyName="UndeadEarthConnectionString3" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.UserZombiePackProgress" Member="UserZombiePackProgressDtos">
+    <Type Name="UserZombiePackProgressDto">
+      <Column Name="Id" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="UserId" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+      <Column Name="ZombiePackId" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+      <Column Name="ZombiesLeft" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="LastHuntDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="MaxZombies" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="RegenZombieRate" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="RegenMinuteTicks" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="LastRegen" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="IsDestroyed" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.ZombiePacks" Member="ZombiePackDtos">
+    <Type Name="ZombiePackDto">
+      <Column Name="Id" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Latitude" Type="System.Decimal" DbType="Money NOT NULL" CanBeNull="false" />
+      <Column Name="Longitude" Type="System.Decimal" DbType="Money NOT NULL" CanBeNull="false" />
+      <Column Name="Name" Type="System.String" DbType="NVarChar(MAX) NOT NULL" CanBeNull="false" />
+      <Column Name="HotZoneId" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Items" Member="ItemDtos">
+    <Type Name="ItemDto">
+      <Column Name="Id" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Name" Type="System.String" DbType="NVarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="Description" Type="System.String" DbType="NVarChar(255) NOT NULL" CanBeNull="false" />
+      <Column Name="Price" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Energy" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Distance" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Attack" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="IsOneTimeUse" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.SafeHouseItems" Member="SafeHouseItemDtos">
+    <Type Name="SafeHouseItemDto">
+      <Column Name="Id" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="SafeHouseId" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+      <Column Name="UserId" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+      <Column Name="ItemId" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.SafeHouses" Member="SafeHouseDtos">
+    <Type Name="SafeHouseDto">
+      <Column Name="Id" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Latitude" Type="System.Decimal" DbType="Money NOT NULL" CanBeNull="false" />
+      <Column Name="Longitude" Type="System.Decimal" DbType="Money NOT NULL" CanBeNull="false" />
+      <Column Name="HotZoneId" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Stores" Member="StoreDtos">
+    <Type Name="StoreDto">
+      <Column Name="Id" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Latitude" Type="System.Decimal" DbType="Money NOT NULL" CanBeNull="false" />
+      <Column Name="Longitude" Type="System.Decimal" DbType="Money NOT NULL" CanBeNull="false" />
+      <Column Name="Name" Type="System.String" DbType="NVarChar(MAX) NOT NULL" CanBeNull="false" />
+      <Column Name="HotZoneId" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.UserCounts" Member="UserCountDtos">
+    <Type Name="UserCountDto">
+      <Column Name="Id" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="UserId" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="ZombiesKilled" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="ZombiePacksDestroyed" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="Miles" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="HotZonesDestroyed" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="PeakAttack" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="AccumulatedMoney" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.HotZones" Member="HotZoneDtos">
+    <Type Name="HotZoneDto">
+      <Column Name="Id" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Latitude" Type="System.Decimal" DbType="Money NOT NULL" CanBeNull="false" />
+      <Column Name="Longitude" Type="System.Decimal" DbType="Money NOT NULL" CanBeNull="false" />
+      <Column Name="Name" Type="System.String" DbType="NVarChar(MAX) NOT NULL" CanBeNull="false" />
+      <Column Name="CanStartHere" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Users" Member="UserDtos">
+    <Type Name="UserDto">
+      <Column Name="Id" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Email" Type="System.String" DbType="NVarChar(255) NOT NULL" CanBeNull="false" />
+      <Column Name="DisplayName" Type="System.String" DbType="NVarChar(255) NOT NULL" CanBeNull="false" />
+      <Column Name="ZoneId" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+      <Column Name="LocationId" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+      <Column Name="Latitude" Type="System.Decimal" DbType="Money NOT NULL" CanBeNull="false" />
+      <Column Name="Longitude" Type="System.Decimal" DbType="Money NOT NULL" CanBeNull="false" />
+      <Column Name="LastEnergy" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="LastEnergyDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="MaxEnergy" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Money" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="LastVisitedHotZoneId" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="BaseLineAttackPower" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="BaseLineEnergy" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="LastSightRadius" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="LastSightRadiusDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="BaseSightRadius" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="[Level]" Member="Level" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="PossibleItemAmount" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="CurrentBaseEnergy" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="CurrentBaseAttack" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="FacebookUserId" Type="System.Int64" DbType="BigInt NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.UserItems" Member="UserItemDtos">
+    <Type Name="UserItemDto">
+      <Column Name="UserItemId" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="UserId" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="ItemId" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+    </Type>
+  </Table>
+</Database>

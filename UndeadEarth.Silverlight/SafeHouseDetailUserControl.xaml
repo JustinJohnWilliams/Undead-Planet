@@ -1,0 +1,101 @@
+﻿<UserControl x:Class="UndeadEarth.Silverlight.SafeHouseDetailUserControl"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:data="clr-namespace:System.Windows.Controls;assembly=System.Windows.Controls.Data"
+    mc:Ignorable="d"
+    d:DesignHeight="200" d:DesignWidth="650">
+
+    <Border Style="{StaticResource BorderBlueContainer}">
+        <Grid x:Name="LayoutRoot" Background="White">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            
+            <!-- Border containing user inventory header -->
+            <Border Grid.Row="0" Grid.Column="0" Margin="5" Padding="5" Style="{StaticResource BorderBlueContainer}">
+                <TextBlock x:Name="txtBlockUserItems" Text="User Items:" Style="{StaticResource UndeadEarthTextBlock}" />
+            </Border>
+            
+            <!-- Border containing user inventory, takes up top half -->
+            <Border Grid.Row="1" Grid.Column="0" Style="{StaticResource BorderBlueContainer}">
+                <data:DataGrid ItemsSource="{Binding}" 
+                               CanUserReorderColumns="True"
+                               AutoGenerateColumns="False"
+                               SelectionMode="Extended"
+                               x:Name="dataGridUserItems"
+                               IsReadOnly="True">
+                    <data:DataGrid.Columns>
+                        <data:DataGridTextColumn Binding="{Binding Name}" Header="Name" />
+                        <data:DataGridTemplateColumn Header="Description" Width="*">
+                            <data:DataGridTemplateColumn.CellTemplate>
+                                <DataTemplate>
+                                    <TextBlock Text="{Binding Description}" TextWrapping="Wrap" Margin="2" />
+                                </DataTemplate>
+                            </data:DataGridTemplateColumn.CellTemplate>
+                        </data:DataGridTemplateColumn>
+                        <data:DataGridTemplateColumn Header="Transfer">
+                            <data:DataGridTemplateColumn.CellTemplate>
+                                <DataTemplate>
+                                    <Button Content="&gt;&gt;" 
+											x:Name="btnToSafeHouse" 
+											Click="btnToSafeHouse_Click" 
+											DataContext="{Binding}" 
+											Template="{StaticResource UndeadEarthButton}"
+											Width="30" 
+											Margin="3" />
+                                </DataTemplate>
+                            </data:DataGridTemplateColumn.CellTemplate>
+                        </data:DataGridTemplateColumn>
+                    </data:DataGrid.Columns>
+                </data:DataGrid>
+            </Border>
+
+            <!-- Border containing user inventory header -->
+            <Border Grid.Row="0" Grid.Column="1" Style="{StaticResource BorderBlueContainer}">
+                <TextBlock x:Name="txtBlockSafeHouseInventory" Text="Safe House Items:" Style="{StaticResource UndeadEarthTextBlock}" />
+            </Border>
+            
+            <!-- Border containing safe house inventory, takes up bottom half -->
+            <Border Grid.Row="1" Grid.Column="1" Style="{StaticResource BorderBlueContainer}">
+                <data:DataGrid ItemsSource="{Binding}" 
+                               CanUserReorderColumns="True"
+                               AutoGenerateColumns="False"
+                               SelectionMode="Extended"
+                               x:Name="dataGridSafeHouseItems"
+                               IsReadOnly="True">
+                    <data:DataGrid.Columns>
+                        <data:DataGridTemplateColumn Header="Transfer">
+                            <data:DataGridTemplateColumn.CellTemplate>
+                                <DataTemplate>
+                                    <Button Content="&lt;&lt;" 
+											x:Name="btnToUser" 
+											Click="btnToUser_Click" 
+											DataContext="{Binding}" 
+											Template="{StaticResource UndeadEarthButton}" 
+											Width="30" 
+											Margin="3" />
+                                </DataTemplate>
+                            </data:DataGridTemplateColumn.CellTemplate>
+                        </data:DataGridTemplateColumn>
+                        <data:DataGridTextColumn Binding="{Binding Name}" Header="Name" />
+                        <data:DataGridTemplateColumn Header="Description" Width="*">
+                            <data:DataGridTemplateColumn.CellTemplate>
+                                <DataTemplate>
+                                    <TextBlock Text="{Binding Description}" TextWrapping="Wrap" Margin="2" />
+                                </DataTemplate>
+                            </data:DataGridTemplateColumn.CellTemplate>
+                        </data:DataGridTemplateColumn>
+                    </data:DataGrid.Columns>
+                </data:DataGrid>
+            </Border>
+
+        </Grid>
+    </Border>
+</UserControl>

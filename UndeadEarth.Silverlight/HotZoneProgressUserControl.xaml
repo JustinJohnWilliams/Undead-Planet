@@ -1,0 +1,20 @@
+﻿<UserControl x:Class="UndeadEarth.Silverlight.HotZoneProgressUserControl"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    d:DesignHeight="300" d:DesignWidth="400">
+    
+    <Border Style="{StaticResource BorderBlueContainer}">
+        <StackPanel x:Name="LayoutRoot" Background="Transparent">
+            <TextBlock x:Name="textBlockHotZoneName" FontSize="32" />
+            <StackPanel HorizontalAlignment="Left">
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock Text="Zombie Packs Remaining:" Style="{StaticResource UndeadEarthTextBlock}" FontSize="24" />
+                    <TextBlock Text="..." x:Name="textBlockZombiePacksLeft" Style="{StaticResource UndeadEarthTextBlock}" FontSize="24" />
+                </StackPanel>
+            </StackPanel>
+        </StackPanel>
+    </Border>
+</UserControl>

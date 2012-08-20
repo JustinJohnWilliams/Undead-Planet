@@ -1,0 +1,347 @@
+﻿body
+{
+	background-repeat: repeat-x;
+	font-family: Lucida Grande, Lucida Sans, Arial, sans-serif !important;
+	font-size: .9em;
+	line-height: 1.5em;
+	width: 675px;
+}
+
+#Main
+{
+	margin-bottom: 20px;
+	width: 675px;
+	border: solid 1px silver;
+	padding: 25px 25px 25px 25px;
+	background-color: White;
+}
+
+#Footer
+{
+	background-image: url('images/body-background-bottom.png');
+	background-repeat: repeat-x;
+}
+
+#Nav
+{
+	background-color: White;
+	padding: 2px;
+}
+
+h1, h2, h3
+{
+	border-left: solid 1px silver;
+	border-bottom: solid 1px silver;
+	padding-bottom: 5px;
+	padding-left: 5px;
+	color: #E17009;
+}
+
+h4
+{
+    border-left: solid 1px silver;
+	border-bottom: solid 1px silver;
+	padding-bottom: 3px;
+	padding-left: 5px;
+	color: #E17009;
+	margin-bottom: 3px;
+}
+
+hr 
+{
+    border: 0;
+    background-color: Silver;
+    height: 1px;
+    width: 95%;
+}
+
+p
+{
+	margin-left: 15px;
+	padding-left: 5px;
+	border-left: solid 1px #f2f2f2;
+}
+
+fieldset.form
+{
+	border-width: 1px;
+	border-style: solid;
+	border-color: #79B7E7;
+	-moz-border-radius: 5px; 
+	-webkit-border-radius: 5px;
+	font-family: Lucida Grande, Lucida Sans, Arial, sans-serif !important;
+    font-size: 16px !important;
+    font-style: normal !important;
+    font-variant: normal !important;
+    font-weight: normal !important;
+}
+
+fieldset.form legend
+{
+	color: #E17009;
+	font-size: 1.2em;
+}
+
+fieldset.form ol
+{
+	list-style: none;
+	padding-left: 10px;
+}
+
+fieldset.form ol li
+{
+    margin: 5px 0 5px 0;
+}
+
+fieldset.form ol li label
+{
+	display: block;
+}
+
+input.button
+{
+	width: 100px;
+	cursor: pointer;
+	border: 1px solid #c5dbec; 
+	background: #dfeffc url(images/ui-bg_glass_85_dfeffc_1x400.png) 50% 50% repeat-x; 
+	font-weight: bold; 
+	color: #2e6e9e; 
+	outline: none;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+    font-family: Lucida Grande, Lucida Sans, Arial, sans-serif !important;
+    font-size: 16px !important;
+    font-style: normal !important;
+    font-variant: normal !important;
+}
+
+a.link
+{
+	color: #003AF7;
+}
+
+input.long
+{
+	width: 200px;
+}
+
+input.longer
+{
+	width: 300px;
+}
+
+input.button:hover
+{
+	border: 1px solid #79b7e7; 
+	background: #d0e5f5 url(images/ui-bg_glass_75_d0e5f5_1x400.png) 50% 50% repeat-x; 
+	font-weight: bold; 
+	color: #1d5987; 
+	outline: none;
+}
+
+input.textBox
+{
+	width: 300px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border: 1px solid #a6c9e2;
+	background: #fcfdfd url(images/ui-bg_inset-hard_100_fcfdfd_1x100.png) 50% bottom repeat-x; 
+	color: #222222;
+	padding: 3px;
+    font-family: Lucida Grande, Lucida Sans, Arial, sans-serif !important;
+    font-size: 16px !important;
+    font-style: normal !important;
+    font-variant: normal !important;
+}
+
+textarea
+{
+    width: 300px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border: 1px solid #a6c9e2; 
+	background: #fcfdfd url(images/ui-bg_inset-hard_100_fcfdfd_1x100.png) 50% bottom repeat-x; 
+	color: #222222;
+	padding: 3px;
+    font-family: Lucida Grande, Lucida Sans, Arial, sans-serif !important;
+    font-size: 16px !important;
+    font-style: normal !important;
+    font-variant: normal !important;
+}
+
+div.label
+{
+    width: 300px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border: 1px solid #a6c9e2; 
+	background: #fcfdfd url(images/ui-bg_inset-hard_100_fcfdfd_1x100.png) 50% bottom repeat-x; 
+	color: #222222;
+	padding: 3px;
+    font-family: Lucida Grande, Lucida Sans, Arial, sans-serif !important;
+    font-size: 16px !important;
+    font-style: normal !important;
+    font-variant: normal !important;
+}
+
+select.dropDownList
+{
+	width: 307px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border: 1px solid #a6c9e2; 
+	background: #fcfdfd url(images/ui-bg_inset-hard_100_fcfdfd_1x100.png) 50% bottom repeat-x; 
+	color: #222222;
+	padding: 3px;
+}
+
+div.radioButtonGroup
+{
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border: 1px solid #a6c9e2; 
+	background: #fcfdfd url(images/ui-bg_inset-hard_100_fcfdfd_1x100.png) 50% bottom repeat-x; 
+	color: #222222;
+	width: 300px;
+	text-align: center;
+}
+
+table.data
+{
+	width: 300px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border: 1px solid #a6c9e2; 
+	background-color: #FFFFFF;
+	width: 100%;
+    font-family: Lucida Grande, Lucida Sans, Arial, sans-serif !important;
+    font-size: 16px !important;
+    font-style: normal !important;
+    font-variant: normal !important;
+    font-weight: normal !important;
+}
+
+table.data th
+{
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	font-weight: bold; 
+	outline: none;
+	border: 1px solid #4297d7; 
+	background: #5c9ccc url(images/ui-bg_gloss-wave_55_5c9ccc_500x100.png) 50% 50% repeat-x; 
+	color: #ffffff; 
+	font-weight: bold;
+	padding: 0 5px 0 5px;
+}
+
+table.data td
+{
+	border: solid 1px #f5f5f5;
+	padding: 0 5px 0 5px;
+}
+
+
+tr.row
+{
+	background-color: #ffffff;
+}
+
+tr.alternateRow
+{
+	background-color: #f2f2f2;
+}
+
+.hidden
+{
+	display: none;
+}
+
+.ribbonButton
+{
+	float: left;
+	height: 20px; 
+	width: 60px; 
+	margin-top: 3px; 
+	margin-right: 5px; 
+	margin-left: 5px;
+	text-align: center;
+	font-size: .8em;
+	cursor: pointer;
+	border: 1px solid #c5dbec; 
+	background: #dfeffc url(images/ui-bg_glass_85_dfeffc_1x400.png) 50% 50% repeat-x; 
+	font-weight: bold; 
+	color: #2e6e9e; 
+	outline: none;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+    font-family: Lucida Grande, Lucida Sans, Arial, sans-serif !important;
+    font-style: normal !important;
+    font-variant: normal !important;
+    line-height: 1em !important;
+    padding: 4px 3px 2px 3px;
+}
+
+.ribbonButton:hover
+{
+	border: 1px solid #79b7e7; 
+	background: #d0e5f5 url(images/ui-bg_glass_75_d0e5f5_1x400.png) 50% 50% repeat-x; 
+	font-weight: bold; 
+	color: #1d5987; 
+	outline: none;
+}
+
+.divButton
+{
+	text-align: center;
+	cursor: pointer;
+	border: 1px solid #c5dbec; 
+	background: #dfeffc url(images/ui-bg_glass_85_dfeffc_1x400.png) 50% 50% repeat-x; 
+	font-weight: bold; 
+	color: #2e6e9e; 
+	outline: none;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+    font-family: Lucida Grande, Lucida Sans, Arial, sans-serif !important;
+    font-size: 14px !important;
+    font-style: normal !important;
+    font-variant: normal !important;
+    line-height: 1em !important;
+    padding: 3px;
+    margin: 0 2px 0 2px;
+}
+
+.divButton:hover
+{
+	border: 1px solid #79b7e7; 
+	background: #d0e5f5 url(images/ui-bg_glass_75_d0e5f5_1x400.png) 50% 50% repeat-x; 
+	font-weight: bold; 
+	color: #1d5987; 
+	outline: none;
+}
+
+.ribbonButton a
+{
+	text-decoration: none;
+}
+
+.ribbonButton img
+{
+	border: none;
+	display: block;
+	margin-bottom: 5px;
+}
+
+.ribbonMenuItems
+{
+	font-size: 12px !important; 
+}
+
+a.imageButton
+{
+    text-decoration: none;
+}
+
+a.imageButton img
+{
+    border: none;
+}

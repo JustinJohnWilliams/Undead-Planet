@@ -1,0 +1,60 @@
+﻿<UserControl x:Class="UndeadEarth.Silverlight.TutorialUserControl"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+    <Grid x:Name="LayoutRoot" Background="#99FFFFFF">
+        <Border Grid.Row="0" Grid.Column="0" Style="{StaticResource BorderBlueContainer}" Height="450" Width="650" BorderBrush="Black">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="Auto" />
+                </Grid.RowDefinitions>
+                <Border Grid.Row="0" Grid.Column="0" Style="{StaticResource BorderBlueContainer}" >
+                    <TextBlock FontSize="15" Text="Hey First Timer!" TextWrapping="Wrap" HorizontalAlignment="Center" Style="{StaticResource UndeadEarthTextBlock}" />
+                </Border>
+                <RichTextBox Grid.Row="1" Grid.Column="0" BorderThickness="0" IsReadOnly="True" >
+                	<Paragraph FontSize="15"><Run Text="Welcome hunter.  The inevitable zombie apocalypse has finally happened.  It is up to you to destroy all the zombies."/></Paragraph>
+                	<Paragraph><Run/></Paragraph>
+                    <Paragraph FontSize="15">
+                		<Run Text="Click "/>
+						<InlineUIContainer>
+                            <Image x:Name="imageHotzone" Width="30" Height="30" />
+                		</InlineUIContainer>
+                        <Run Text=" to enter Hot Zone." />
+					</Paragraph>
+                	<Paragraph><Run/></Paragraph>
+                    <Paragraph FontSize="15">
+                		<Run Text="Click "/>
+						<InlineUIContainer>
+                            <Image x:Name="imageZombie" Width="30" Height="30" />
+                		</InlineUIContainer>
+                        <Run Text=" to kill zombies." />
+					</Paragraph>
+                	<Paragraph><Run/></Paragraph>
+                    <Paragraph FontSize="15">
+                		<Run Text="Go here "/>
+						<InlineUIContainer>
+                            <Image x:Name="imageShop" Width="30" Height="30" />
+                		</InlineUIContainer>
+                        <Run Text=" to shop for items."/>
+					</Paragraph>
+                	<Paragraph><Run/></Paragraph>
+                    <Paragraph FontSize="15">
+                		<Run Text="Go here "/>
+						<InlineUIContainer>
+                            <Image x:Name="imageSafeHouse" Width="30" Height="30" />
+                		</InlineUIContainer>
+                        <Run Text=" to store and teleport items. "/>
+					</Paragraph>
+                    <Paragraph><Run /></Paragraph>
+                </RichTextBox>
+                <Button Grid.Row="2" Grid.Column="0" x:Name="buttonClose" Click="buttonClose_Click" Template="{StaticResource UndeadEarthButton}">
+                    <TextBlock Text="Close" Style="{StaticResource UndeadEarthTextBlock}" />
+                </Button>
+            </Grid>
+        </Border>
+    </Grid>
+</UserControl>

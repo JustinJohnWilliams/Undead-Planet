@@ -1,0 +1,80 @@
+
+
+        AsyncDelegation ad = new AsyncDelegation();
+
+	ad.Call<HotZoneService>()
+          .Method(h => h.GetAllHotZones)
+          .WithParameters(_userId)
+          .WhenFinishedExecute(
+		(data) => 
+		{
+			_hotZones = data;
+			_view.InitializeHotZones(data)
+		})
+          .ThenCall<HotZoneService>(h => h.Uncleared)
+          .WithParameters(_userId)
+          .WhenFinishedExecute(
+		(uncleared) =>
+                { 
+                    _zombiePacksCounts = uncleared;
+                    List<Guid> clearedHotZones = 
+                        _hotZones.Where(h => _zombiePackCounts.Any(z => z.Key == h.Id) == false)
+                                 .Select(h => h.Id)
+                                 .ToList();
+
+                    foreach (Guid id in clearedHotZones)
+                    {
+                        _view.UpdateHotZoneClearedStatus(id, true);
+                    }
+                });
+          ad.Go();
+
+	  AsyncDelegation ad = new AsyncDelegation();
+          ad.Call<ZombiePackService>(z => z.Hunt)
+            .WithParameters(_userId, _currentZombiePackId)
+            .WhenFinishedExecute(AsyncDelegation.Nothing)
+            .ThenCall<ZombiePackService>(z => z.IsZombiePackCleared)
+            .WithParameters(_userId, _currentZombiePackId)
+            .WhenFinishedExecute<BooleanResult>(
+            	(result) =>
+                {
+                    if (result.Value == true)
+                    {
+                        Node node = _visibleZombiePacks.FirstOrDefault(c => c.Id == _currentZombiePackId);
+                        if (node != null)
+                        {
+                            _visibleZombiePacks.Remove(node);
+                            List<Node> nodes = new List<Node>();
+                            nodes.Add(node);
+
+                            _view.RemoveZombiePacks(nodes);
+                            UpdateHuntStatus();
+                        }
+                    }
+	        })
+            .ThenCall<UserService>(u => u.Zone)
+            .WithParameters(_userId)
+            .WhenFinishedExecute<GuidResult>(
+		(result) => 
+		{
+			_currentZoneId = result.Value;
+		})
+            .ThenCall<HotZoneService(h => h.ZombiePacksLeft)
+            .WithParameters(_userId, _currentHotZoneId)
+            .WhenFinishedThenExecute<IntResult>(
+		(result) =>
+		{
+			KeyValuePair<Guid, int>? kvp = _zombiePackCounts.SingleOrDefault(c => c.Key == _currentHotZoneId);
+                        if (kvp != null)
+                        {
+                            _zombiePackCounts.Remove(kvp.Value);
+                            _zombiePackCounts.Add(new KeyValuePair<Guid, int>(_currentHotZoneId, zombiePackCount.Value));
+                        }
+
+                        if (zombiePackCount.Value == 0)
+                        {
+                            _view.UpdateHotZoneClearedStatus(_currentHotZoneId, true);
+                        }
+		})
+             .Go();
+   

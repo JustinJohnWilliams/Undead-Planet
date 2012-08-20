@@ -1,0 +1,14 @@
+C:\Projects\UndeadEarth\UndeadEarth.Dal\bin\Debug\UndeadEarth.Dal.dll
+C:\Projects\UndeadEarth\UndeadEarth.Dal\bin\Debug\UndeadEarth.Dal.pdb
+C:\Projects\UndeadEarth\UndeadEarth.Dal\bin\Debug\UndeadEarth.Contract.dll
+C:\Projects\UndeadEarth\UndeadEarth.Dal\bin\Debug\UndeadEarth.Contract.pdb
+C:\Projects\UndeadEarth\UndeadEarth.Dal\obj\Debug\ResolveAssemblyReference.cache
+C:\Projects\UndeadEarth\UndeadEarth.Dal\obj\Debug\UndeadEarth.Dal.dll
+C:\Projects\UndeadEarth\UndeadEarth.Dal\obj\Debug\UndeadEarth.Dal.pdb
+c:\Users\juwilliams\Desktop\Personal\Undead-Planet\UndeadEarth.Dal\bin\Debug\UndeadEarth.Dal.dll
+c:\Users\juwilliams\Desktop\Personal\Undead-Planet\UndeadEarth.Dal\bin\Debug\UndeadEarth.Dal.pdb
+c:\Users\juwilliams\Desktop\Personal\Undead-Planet\UndeadEarth.Dal\bin\Debug\UndeadEarth.Contract.dll
+c:\Users\juwilliams\Desktop\Personal\Undead-Planet\UndeadEarth.Dal\bin\Debug\UndeadEarth.Contract.pdb
+c:\Users\juwilliams\Desktop\Personal\Undead-Planet\UndeadEarth.Dal\obj\Debug\ResolveAssemblyReference.cache
+c:\Users\juwilliams\Desktop\Personal\Undead-Planet\UndeadEarth.Dal\obj\Debug\UndeadEarth.Dal.dll
+c:\Users\juwilliams\Desktop\Personal\Undead-Planet\UndeadEarth.Dal\obj\Debug\UndeadEarth.Dal.pdb

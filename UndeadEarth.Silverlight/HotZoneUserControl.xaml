@@ -1,0 +1,11 @@
+﻿<UserControl x:Class="UndeadEarth.Silverlight.HotZoneUserControl"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d" Background="Transparent">
+    <StackPanel Orientation="Horizontal" Background="Transparent">
+        <Image x:Name="imageHotZone" Width="30" Height="30" Grid.Row="0" Grid.Column="0" Cursor="Hand" MouseEnter="ImageHotZone_MouseEnter" HorizontalAlignment="Left" VerticalAlignment="Top" MouseLeftButtonDown="imageHotZone_MouseLeftButtonDown" ToolTipService.ToolTip="Click to move to this hot zone." />
+        <Image x:Name="imageClearedHotZone" Width="30" Height="30" Grid.Row="0" Grid.Column="0" Cursor="Hand" MouseEnter="ImageHotZone_MouseEnter" HorizontalAlignment="Left" VerticalAlignment="Top" MouseLeftButtonDown="imageHotZone_MouseLeftButtonDown" Visibility="Collapsed" ToolTipService.ToolTip="This hot zone has been cleared." />
+    </StackPanel>
+</UserControl>

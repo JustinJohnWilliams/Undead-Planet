@@ -1,0 +1,14 @@
+C:\Projects\UndeadEarth\UndeadEarth.Model\bin\Debug\UndeadEarth.Model.dll
+C:\Projects\UndeadEarth\UndeadEarth.Model\bin\Debug\UndeadEarth.Model.pdb
+C:\Projects\UndeadEarth\UndeadEarth.Model\bin\Debug\UndeadEarth.Contract.dll
+C:\Projects\UndeadEarth\UndeadEarth.Model\bin\Debug\UndeadEarth.Contract.pdb
+C:\Projects\UndeadEarth\UndeadEarth.Model\obj\Debug\ResolveAssemblyReference.cache
+C:\Projects\UndeadEarth\UndeadEarth.Model\obj\Debug\UndeadEarth.Model.dll
+C:\Projects\UndeadEarth\UndeadEarth.Model\obj\Debug\UndeadEarth.Model.pdb
+c:\Users\juwilliams\Desktop\Personal\Undead-Planet\UndeadEarth.Model\bin\Debug\UndeadEarth.Model.dll
+c:\Users\juwilliams\Desktop\Personal\Undead-Planet\UndeadEarth.Model\bin\Debug\UndeadEarth.Model.pdb
+c:\Users\juwilliams\Desktop\Personal\Undead-Planet\UndeadEarth.Model\bin\Debug\UndeadEarth.Contract.dll
+c:\Users\juwilliams\Desktop\Personal\Undead-Planet\UndeadEarth.Model\bin\Debug\UndeadEarth.Contract.pdb
+c:\Users\juwilliams\Desktop\Personal\Undead-Planet\UndeadEarth.Model\obj\Debug\ResolveAssemblyReference.cache
+c:\Users\juwilliams\Desktop\Personal\Undead-Planet\UndeadEarth.Model\obj\Debug\UndeadEarth.Model.dll
+c:\Users\juwilliams\Desktop\Personal\Undead-Planet\UndeadEarth.Model\obj\Debug\UndeadEarth.Model.pdb

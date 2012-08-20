@@ -1,0 +1,135 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{19F3F20F-46C7-4282-A6D9-0D6AD92EBCDA}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>UndeadEarth.Model</RootNamespace>
+    <AssemblyName>UndeadEarth.Model</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation />
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AchievementProvider.cs" />
+    <Compile Include="DistanceCalculator.cs" />
+    <Compile Include="HuntDirector.cs" />
+    <Compile Include="ItemUsageDirector.cs" />
+    <Compile Include="Proxy\Achievement.cs" />
+    <Compile Include="Proxy\BooleanResult.cs" />
+    <Compile Include="Proxy\EnergyResult.cs" />
+    <Compile Include="Proxy\GuidResult.cs" />
+    <Compile Include="Proxy\HotZoneNode.cs" />
+    <Compile Include="Proxy\IntResult.cs" />
+    <Compile Include="Proxy\Item.cs" />
+    <Compile Include="Proxy\LevelResult.cs" />
+    <Compile Include="Proxy\LongResult.cs" />
+    <Compile Include="Proxy\SafeHouseNode.cs" />
+    <Compile Include="Proxy\StoreNode.cs" />
+    <Compile Include="Proxy\UserStats.cs" />
+    <Compile Include="Proxy\ZombiePackProgress.cs" />
+    <Compile Include="RandomNumberProvider.cs" />
+    <Compile Include="SafeHouseDirector.cs" />
+    <Compile Include="ShopDirector.cs" />
+    <Compile Include="UserAttackPowerProvider.cs" />
+    <Compile Include="UserCreationService.cs" />
+    <Compile Include="UserEnergyProvider.cs" />
+    <Compile Include="UserLevelService.cs" />
+    <Compile Include="UserMoveDirector.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Proxy\DistanceNode.cs" />
+    <Compile Include="Proxy\ZombiePackNode.cs" />
+    <Compile Include="Proxy\Node.cs" />
+    <Compile Include="Proxy\UserNode.cs" />
+    <Compile Include="UserPotentialProvider.cs" />
+    <Compile Include="UserZombiePackProgress.cs" />
+    <Compile Include="ZombiePackDifficultyDirector.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\UndeadEarth.Contract\UndeadEarth.Contract.csproj">
+      <Project>{522230D9-A309-4EEC-A08A-9E3118A7E03A}</Project>
+      <Name>UndeadEarth.Contract</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

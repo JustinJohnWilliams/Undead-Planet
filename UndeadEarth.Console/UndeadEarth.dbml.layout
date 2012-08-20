@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="UndeadEarth">
+  <DataContextMoniker Name="/UndeadEarthDataContext" />
+  <nestedChildShapes>
+    <classShape Id="ad11a4cb-6338-4f3a-986b-fd47b92e5531" absoluteBounds="1, 0.5, 2, 1.7708968098958331">
+      <DataClassMoniker Name="/UndeadEarthDataContext/HotZoneDto" />
+      <nestedChildShapes>
+        <elementListCompartment Id="a0226bcb-fdef-4c53-8ec0-a0b746f43a42" absoluteBounds="1.0150000000000001, 0.96, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="055d986c-4819-4efb-bad5-3a52b8c3bd04" absoluteBounds="3.125, 0.5, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/UndeadEarthDataContext/SafeHouseDto" />
+      <nestedChildShapes>
+        <elementListCompartment Id="cb8993ff-3efa-46b3-9613-5be703da5ea0" absoluteBounds="3.14, 0.96, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="169ba824-d65f-4ad8-bb1d-37109554c302" absoluteBounds="3.125, 2.25, 2, 1.7708968098958331">
+      <DataClassMoniker Name="/UndeadEarthDataContext/StoreDto" />
+      <nestedChildShapes>
+        <elementListCompartment Id="325d7ffe-8cea-4e3f-8ca5-ba40dd24df4d" absoluteBounds="3.1399999999999997, 2.71, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="84c49a0f-837e-4a73-929f-aacff6692234" absoluteBounds="1, 2.375, 2, 1.7708968098958331">
+      <DataClassMoniker Name="/UndeadEarthDataContext/ZombiePackDto" />
+      <nestedChildShapes>
+        <elementListCompartment Id="a4bb477e-7e09-49e0-bdd6-36c96a44328d" absoluteBounds="1.0150000000000001, 2.835, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

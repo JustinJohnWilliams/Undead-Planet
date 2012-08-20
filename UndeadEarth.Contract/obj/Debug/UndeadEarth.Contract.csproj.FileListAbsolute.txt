@@ -1,0 +1,10 @@
+C:\Projects\UndeadEarth\UndeadEarth.Contract\bin\Debug\UndeadEarth.Contract.dll
+C:\Projects\UndeadEarth\UndeadEarth.Contract\bin\Debug\UndeadEarth.Contract.pdb
+C:\Projects\UndeadEarth\UndeadEarth.Contract\obj\Debug\ResolveAssemblyReference.cache
+C:\Projects\UndeadEarth\UndeadEarth.Contract\obj\Debug\UndeadEarth.Contract.dll
+C:\Projects\UndeadEarth\UndeadEarth.Contract\obj\Debug\UndeadEarth.Contract.pdb
+c:\Users\juwilliams\Desktop\Personal\Undead-Planet\UndeadEarth.Contract\bin\Debug\UndeadEarth.Contract.dll
+c:\Users\juwilliams\Desktop\Personal\Undead-Planet\UndeadEarth.Contract\bin\Debug\UndeadEarth.Contract.pdb
+c:\Users\juwilliams\Desktop\Personal\Undead-Planet\UndeadEarth.Contract\obj\Debug\ResolveAssemblyReference.cache
+c:\Users\juwilliams\Desktop\Personal\Undead-Planet\UndeadEarth.Contract\obj\Debug\UndeadEarth.Contract.dll
+c:\Users\juwilliams\Desktop\Personal\Undead-Planet\UndeadEarth.Contract\obj\Debug\UndeadEarth.Contract.pdb
